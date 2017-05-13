@@ -4,5 +4,6 @@
     <center><%= gravatar_for @user%></center>
   </div>
 </div>
+<%= will_paginate  @user_articles %>
 <h1 align="center">  List <%= @user.username %>'s  articles</h1>
-<%= render 'articles/article', obj: @user.articles%>
+<%= render 'articles/article', obj: @user_articles %>
