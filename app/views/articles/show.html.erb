@@ -1,0 +1,12 @@
+<% if @article.user %>
+<div class= "row">
+<div class = "col-md-4 col-md-offset-2">
+  <%= link_to gravatar_for(@article.user), user_path(@article.user) %>
+  <%= link_to @article.user.username, user_path(@article.user) %>
+  <%= pluralize(@article.user.articles.count, 'article') if @article.user.articles %>
+</div>
+</div>
+<% end %>
+<p><%= @article.title %></p>
+<p><%= @article.description %></p>
+<%= link_to 'Back', articles_path %>
