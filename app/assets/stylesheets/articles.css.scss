@@ -15,3 +15,13 @@ font-size: 28px;
   text-align: center;
 margin-top: 7%;
 }
+@media (min-width: 768px){
+.navbar-right {
+    // float: right !important;
+    // margin-right: -15px;
+}
+.navbar-nav {
+    /* float: left; */
+    margin: 0;
+}
+}
