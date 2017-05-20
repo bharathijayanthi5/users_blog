@@ -1,0 +1,5 @@
+<h1>Edit comment</h1>
+<%= form_for ([@article, @comment]) do |f| %>
+<p><%= f.text_field :content %></p>
+<p><%= f.submit 'create comment'%></p>
+<% end %>
