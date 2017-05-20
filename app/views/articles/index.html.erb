@@ -1,14 +1,14 @@
+<div class="container">
+<div class="row">
+<div class="articles-heading">
 <h1>List of all articles</h1>
+</div>
+<div class="new-article">
 <%= link_to 'New Article', new_article_path %>
-<table>
-  <tr>
-    <th>Title</th>
-    <th>Text</th>
-    <th colspan="3"></th>
-  </tr>
-<div><%= will_paginate %></div>
+</div>
   <div class = "article-body">
     <%= render 'article', obj: @articles %>
   </div>
-
-</table>
+<div><%= will_paginate %></div>
+</div>
+</div>
