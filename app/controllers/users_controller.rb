@@ -34,7 +34,7 @@ end
   end
   private
   def user_params
-    params.require(:user).permit(:username, :email, :password)
+    params.require(:user).permit(:image, :username, :email, :password)
   end
   def set_user
       @user = User.find(params[:id])
